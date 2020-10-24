@@ -1,6 +1,5 @@
-import pywinauto
+# These functions start, resize, and move windows
 import win32gui
-
 from pywinauto import Desktop
 windows = Desktop(backend="uia").windows()
 # print([w.window_text() for w in windows])
@@ -23,10 +22,10 @@ print(f"x1 = " + str(x1))
 print(f"y1 = " + str(y1))
 print(f"h = " + str(h))
 print(f"w = " + str(w))
-win32gui.MoveWindow(hwnd, x0+100, y0, w+400, h+500, True)
+win32gui.MoveWindow(hwnd, 10, 10, 2500, 1500, True)
 
 x0, y0, x1, y1 = win32gui.GetWindowRect(hwnd)
-w = x1 - x0 # width
+w = x1 - x0 # width of window
 h = y1 - y0 # height
 
 print(f"new x0 = " + str(x0))
@@ -35,3 +34,7 @@ print(f"new x1 = " + str(x1))
 print(f"new y1 = " + str(y1))
 print(f"new h = " + str(h))
 print(f"new w = " + str(w))
+import cv2
+# # Exit on key press
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()

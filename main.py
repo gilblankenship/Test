@@ -1,5 +1,5 @@
 import itertools
-import sys
+# import sys
 import cv2
 import os
 import numpy as np
