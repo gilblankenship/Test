@@ -54,8 +54,10 @@ resized = cv2.resize(imgmatrix, (mat_x//4,mat_y//4), interpolation = cv2.INTER_A
 compression_params = [cv2.IMWRITE_JPEG_QUALITY, 99]
 #cv2.imwrite(name, resized, compression_params)
 
-cv2.imshow('Image Array',resized)
-cv2.moveWindow('Image Array',100,200)
+winName='Image Array'
+cv2.imshow(winName,resized)
+cv2.namedWindow(winName, cv2.WINDOW_AUTOSIZE)
+cv2.moveWindow(winName,100,200)
 
 # Exit on key press
 cv2.waitKey(0)
