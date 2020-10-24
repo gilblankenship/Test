@@ -8,7 +8,7 @@ os.chdir(ProjectDirectory)
 ImageDirectory=os.getcwd() + "\\TestImages\\"
 print(ImageDirectory)
 
-#User defined variables
+# image variables
 name = "ImageArray" + ".jpg" #Name of the exported file
 margin = 10 #Margin between pictures in pixels
 w = 4 # Width of the matrix (nb of images)
