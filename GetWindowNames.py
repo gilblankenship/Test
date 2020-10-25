@@ -1,4 +1,4 @@
-# These functions start, resize, and move windows
+# These functions start, resize, and move windows on Windows machines
 import win32gui
 from pywinauto import Desktop
 windows = Desktop(backend="uia").windows()
@@ -34,7 +34,7 @@ print(f"new x1 = " + str(x1))
 print(f"new y1 = " + str(y1))
 print(f"new h = " + str(h))
 print(f"new w = " + str(w))
-import cv2
+# import cv2
 # # Exit on key press
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()

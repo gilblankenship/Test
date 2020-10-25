@@ -21,7 +21,7 @@ capture = cv2.VideoCapture(0) # The builtin webcam
 
 while(True):
     ret, frame = capture.read()
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     cv2.imshow('mouseRGB', frame)
 
     k = cv2.waitKey(0)
